@@ -9,7 +9,7 @@ using System.IO;
 
 namespace MiroslavD
 {
-    //Напишете програма, която по даден масив от числа намира мажоранта на масива и го отпечатва.
+    
 
     public class Program
     {
