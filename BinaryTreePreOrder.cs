@@ -103,7 +103,7 @@ namespace MiroslavD
                 get { return this.root; }
             }
 
-            private void PrintInorder(BinaryTreeNode<T> root)
+            private void PrintPreOrder(BinaryTreeNode<T> root)
             {
                 if (root == null)
                 {
@@ -111,14 +111,14 @@ namespace MiroslavD
                 }
 
                 Console.Write(root.Value + " ");
-                PrintInorder(root.LeftChild);             
-                PrintInorder(root.RightChild);
+                PrintPreOrder(root.LeftChild);             
+                PrintPreOrder(root.RightChild);
             }
 
 
-            public void PrintInorder()
+            public void PrintPreOrder()
             {
-                PrintInorder(this.root);
+                PrintPreOrder(this.root);
                 Console.WriteLine();
             }
         }
