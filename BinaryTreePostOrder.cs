@@ -101,22 +101,22 @@ namespace MiroslavD
                 get { return this.root; }
             }
 
-            private void PrintInorder(BinaryTreeNode<T> root)
+            private void PrintPostOrder(BinaryTreeNode<T> root)
             {
                 if (root == null)
                 {
                     return;
                 }
 
-                PrintInorder(root.LeftChild);
-                PrintInorder(root.RightChild);
+                PrintPostOrder(root.LeftChild);
+                PrintPostOrder(root.RightChild);
                 Console.Write(root.Value + " ");
             }
 
 
-            public void PrintInorder()
+            public void PrintPostOrder()
             {
-                PrintInorder(this.root);
+                PrintPostOrder(this.root);
                 Console.WriteLine();
             }
         }
