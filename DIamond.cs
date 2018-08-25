@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiroslavD
 {
-    class DIamond
+    class Diamond
     {
         static void Main(string[] args)
         {
