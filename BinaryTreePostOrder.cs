@@ -136,7 +136,7 @@ namespace MiroslavD
                                  null));
 
 
-                binaryTree.PrintInorder();
+                binaryTree.PrintPostOrder();
             }
         }
     }
