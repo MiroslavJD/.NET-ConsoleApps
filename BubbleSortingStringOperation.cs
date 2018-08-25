@@ -37,7 +37,7 @@ namespace MiroslavD
             {
                 for(int j = 0; j < array.Length - 1; j++)
                 {
-                    if(array[i].CompareTo(array[j+1]) > 0)
+                    if(array[j].CompareTo(array[j+1]) > 0)
                     {
                         temp = array[j + 1];
                         array[j + 1] = array[j];
