@@ -217,7 +217,7 @@ namespace MiroslavD
                 bst.PostOrder(bst.root);
                 Console.WriteLine();
                 Console.WriteLine("Min value: " + bst.GetMin(bst.root));
-                Console.WriteLine("Miax value: " + bst.GetMax(bst.root));              
+                Console.WriteLine("Max value: " + bst.GetMax(bst.root));              
             }
         }
     }
