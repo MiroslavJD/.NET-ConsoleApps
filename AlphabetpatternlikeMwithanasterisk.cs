@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiroslavD
 {
-    //72. Write a C#Sharp program to display alphabet pattern like O with an asterisk.
+    //72. Write a C#Sharp program to display alphabet pattern like M with an asterisk.
     public class Program
     {
         static void Main(string[] args)
