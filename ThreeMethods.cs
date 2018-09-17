@@ -78,7 +78,6 @@ namespace MiroslavD
                      Reverse(numberToReverse);
                      break;
                 case 2:
-                     Console.WriteLine("Average program enter");
                      int[] arr = { 1, 2, 3, 5, 6, 7, 8 };
                      Average(arr);
                     break;
