@@ -58,17 +58,14 @@ namespace MiroslavD
             return result;
         }
 
-        public static void Execute()
-        {
-
-        }
+       
 
         public static void Main()
         {
             Console.WriteLine("Menu: ");
             Console.WriteLine("1: Reverse program: ");
             Console.WriteLine("2: Average program: ");
-            Console.WriteLine("3: Liniar equation program: ");
+            Console.WriteLine("3: Linear equation program: ");
             Console.Write("Enter your choice: ");
             int number = Int32.Parse(Console.ReadLine());
 
