@@ -164,7 +164,7 @@ namespace MiroslavD
                     PrintInorder(TheRoot.Right);
                 }
             }
-            public void PreInorder(BinarySearchTreeNode TheRoot)
+            public void PrintPreOrder(BinarySearchTreeNode TheRoot)
             {
                 if (!(TheRoot == null))
                 {
@@ -173,7 +173,7 @@ namespace MiroslavD
                     PreInorder(TheRoot.Right);
                 }
             }
-            public void PostOrder(BinarySearchTreeNode TheRoot)
+            public void PrintPostOrder(BinarySearchTreeNode TheRoot)
             {
                 if (!(TheRoot == null))
                 {
@@ -214,7 +214,7 @@ namespace MiroslavD
                 Console.WriteLine("Does it contain 5? " + bst.Contains(5));
                 bst.PreInorder(bst.root);
                 Console.WriteLine();
-                bst.PostOrder(bst.root);
+                bst.PrintPostOrder(bst.root);
                 Console.WriteLine();
                 Console.WriteLine("Min value: " + bst.GetMin(bst.root));
                 Console.WriteLine("Max value: " + bst.GetMax(bst.root));              
