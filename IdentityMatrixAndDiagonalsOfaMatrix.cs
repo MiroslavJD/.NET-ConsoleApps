@@ -13,6 +13,7 @@ namespace MiroslavD
             decimal sum = 0;
             Console.Write("Enter size of the matrix NxN: ");
             int n = Int32.Parse(Console.ReadLine());
+            int m = n;
             decimal[,] matrix = new decimal[n, n];
             for (int i = 0; i < n; i++)
             {
@@ -38,17 +39,22 @@ namespace MiroslavD
             Console.WriteLine("Right diagonal: ");
             Console.WriteLine("Sum of the right diagonal: " + sum);
             Console.WriteLine();
+            
             decimal sumLeft = 0;
             Console.WriteLine("Left Diagonal: ");
-            for (int i = 0; i < n; i++) 
-            {
-                    
-                for (int j = 0; j < n; j++)
-                {
-                    
-                    sumLeft = matrix[0, 2] + matrix[1, 1] + matrix[2, 0];
-                }
-            }
+            Console.WriteLine(" ------- Sum of left diagonal -------- ");
+              for (int i = 0; i < n; i++)
+                  {
+                      m = m - 1;
+                      for (int j = 0; j < n; j++)
+                      {
+                          if (j == m)
+                          {
+                              sumLeft = sumLeft + matrix[i, j];
+                          }
+                      }
+                  }
+            
             Console.WriteLine("Sum of left diagonal elements: " + sumLeft);
             Console.WriteLine();
             Console.WriteLine("Left and Right triangular matrix :");
