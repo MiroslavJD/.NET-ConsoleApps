@@ -17,13 +17,27 @@ namespace MiroslavD
         public static void Matrix()
         {
             Console.Write("Enter numbers of rows: ");
-            decimal row = Int32.Parse(Console.ReadLine());
+            int row = Int32.Parse(Console.ReadLine());
             Console.Write("Enter numbers of col: ");
-            decimal col = Int32.Parse(Console.ReadLine());
-            for (decimal i = 0; i < row; i++)
+            int col = Int32.Parse(Console.ReadLine());
+
+            decimal[,] matrix = new decimal[row, col];
+            for (int i = 0; i < row; i++)
             {
                 Console.WriteLine();
-                for (decimal j = 1; j <= col; j++)
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write("Matrix [{0},{1}]: ",i,j);
+                    matrix[i, j] = Int32.Parse(Console.ReadLine());                
+                }
+            }
+            Console.WriteLine();
+
+
+            for (int i = 0; i < row; i++)
+            {
+                Console.WriteLine();
+                for (int j = 1; j <= col; j++)
                 {
                     Console.Write("{0} ", 4 * j + i * i * i);
                 }
@@ -36,9 +50,21 @@ namespace MiroslavD
         {
 
             Console.Write("Enter numbers of rows: ");
-            decimal row = Int32.Parse(Console.ReadLine());
+            int row = Int32.Parse(Console.ReadLine());
             Console.Write("Enter numbers of col: ");
-            decimal col = Int32.Parse(Console.ReadLine());
+            int col = Int32.Parse(Console.ReadLine());
+
+            decimal[,] matrix = new decimal[row, col];
+            for (int i = 0; i < row; i++)
+            {
+                Console.WriteLine();
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write("Matrix [{0},{1}]: ", i, j);
+                    matrix[i, j] = Int32.Parse(Console.ReadLine());
+                }
+            }
+            // By condition if we have i==j should print 0;
             for (decimal i = 0; i < row; i++)
             {
                 Console.WriteLine();
@@ -51,15 +77,15 @@ namespace MiroslavD
 
         }
         //3.
-        public static int Sum()
+        public static decimal Sum()
         {
-            int sum = 0;
+            decimal sum = 0;
             Console.Write("Enter numbers of rows2: ");
             int row = Int32.Parse(Console.ReadLine());
             Console.Write("Enter numbers of col2: ");
             int col = Int32.Parse(Console.ReadLine());
-            
-            int [,] matrix = new int[row, col];
+
+            decimal[,] matrix = new decimal[row, col];
 
             for (int i = 0; i < row; i++)
             {
@@ -72,18 +98,18 @@ namespace MiroslavD
             }
 
             return sum;
-            
+
         }
         //4.
         public static void MaxElement()
         {
-            
+
             Console.Write("Enter numbers of rows: ");
             int row = Int32.Parse(Console.ReadLine());
             Console.Write("Enter numbers of col: ");
             int col = Int32.Parse(Console.ReadLine());
 
-            int[,] matrix = new int[row, col];
+            decimal[,] matrix = new decimal[row, col];
 
             for (int i = 0; i < row; i++)
             {
@@ -91,7 +117,7 @@ namespace MiroslavD
                 {
                     Console.Write("Elements [{0},{1}] ", i, j);
                     matrix[i, j] = Int32.Parse(Console.ReadLine());
-                  
+
                 }
             }
             List<int> maxElement = matrix.OfType<int>().ToList();
@@ -101,13 +127,13 @@ namespace MiroslavD
         //5.
         public static void MinElement()
         {
-           
+
             Console.Write("Enter numbers of rows: ");
             int row = Int32.Parse(Console.ReadLine());
             Console.Write("Enter numbers of col: ");
             int col = Int32.Parse(Console.ReadLine());
 
-            int[,] matrix = new int[row, col];
+            decimal[,] matrix = new decimal[row, col];
 
             for (int i = 0; i < row; i++)
             {
@@ -120,12 +146,14 @@ namespace MiroslavD
             List<int> minElement = matrix.OfType<int>().ToList();
             var min = minElement.OrderBy(x => x).FirstOrDefault();
             Console.WriteLine("Min: " + min);
-            
+
 
         }
 
         public static void Main()
         {
+
+
             Console.WriteLine("1: Matrix1: 4j + 3^i; i<j");
             Console.WriteLine("2: Matrix2: 0; i==j");
             Console.WriteLine("3: Sum ");
