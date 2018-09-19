@@ -55,7 +55,7 @@ namespace MiroslavD
             Console.WriteLine("Left and Right triangular matrix :");
 
             Console.WriteLine();
-            Console.WriteLine("Identity Matrix: "); // You can type in only 1 and get Identity matrix//
+            Console.WriteLine("UpperAndLowerTriangularMatrix: "); // You can type in only 1 and get Identity matrix//
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine();
