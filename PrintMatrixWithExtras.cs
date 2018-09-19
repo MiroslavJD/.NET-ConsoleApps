@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 using System.Collections;
 
 namespace MiroslavD
-{  //
-    // 4*j + i*i*i; pri i < j;
-    // i,j = 0, i == j;
-    // 
+{ 
     class Class
     {
        public static void PrintMatrix()
