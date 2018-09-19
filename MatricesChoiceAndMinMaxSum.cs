@@ -39,7 +39,7 @@ namespace MiroslavD
                 Console.WriteLine();
                 for (int j = 1; j <= col; j++)
                 {
-                    Console.Write("{0} ", 4 * j + i * i * i);
+                    Console.Write("{0} ", 4 * j + Math.Pow(i,3));
                 }
             }
             Console.WriteLine();
