@@ -13,7 +13,6 @@ namespace MiroslavD
             decimal sum = 0;
             Console.Write("Enter size of the matrix NxN: ");
             int n = Int32.Parse(Console.ReadLine());
-            int m = n;
             decimal[,] matrix = new decimal[n, n];
             for (int i = 0; i < n; i++)
             {
