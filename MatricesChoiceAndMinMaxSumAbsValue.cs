@@ -193,12 +193,10 @@ namespace MiroslavD
                     Console.WriteLine("Index - {0}, Abs value of neative number - {1} " , number.Index, number.AbsValueNumbers);
                 }
 
-                
-              
-
                 Console.Write("Enter rank to show values in the list by: ");
                 int rankInTheList = Int32.Parse(Console.ReadLine());
-
+                
+                 // Enter 1 for the top value, enter 2 for the second top value and so on.
                 var result =
                     from num in listNumbers
                     join absolutenumber in listAbsNumbers on num.Index equals absolutenumber.Index
@@ -207,7 +205,7 @@ namespace MiroslavD
                         Index = num.Index,
                         AbsValueNegativeNumbers = absolutenumber.AbsValueNumbers
                     };
-
+                 
                 var rank =
                     (from nums in listAbsNumbers
                      group nums by nums.AbsValueNumbers into g
