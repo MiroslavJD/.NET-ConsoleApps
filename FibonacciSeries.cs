@@ -26,7 +26,7 @@ namespace MiroslavD
             Console.Write("Enter number: " );
             int number = Int32.Parse(Console.ReadLine());
 
-            for(int i = 1; i < number; i++)
+            for(int i = 1; i <= number; i++)
             {
                 Console.WriteLine("Fibbonaci series: " + Fibbonaci(i));
             }
