@@ -1,0 +1,64 @@
+using System;
+using System Collections.Generics;
+using System Collections;
+using System Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class TransposeOfAMatrix
+{
+        public static void Main() 
+        {
+            Console.Write("Enter row: ");
+            int row = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter col: ");
+            int col = Int32.Parse(Console.ReadLine());
+            int[,] matrix = new int[50, 50];
+            int[,] transpose = new int[50,50];
+            Console.WriteLine("Create the matrix: ");
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write("Matrix[{0}, {1}] : ", i, j);
+                    matrix[i, j] = Int32.Parse(Console.ReadLine());
+                }
+            }
+
+          
+            Console.WriteLine("Show the matrix: ");
+            for (int i = 0; i < row; i++)
+            {
+                Console.WriteLine();
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write("{0} ", matrix[i, j]);
+                }
+            }
+            Console.WriteLine();
+            
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    transpose[j,i] = matrix[i,j];
+                }
+            }
+
+            Console.WriteLine("\TransposeOfAMatrix: ");
+            for (int i = 0; i < row; i++)
+            {
+                Console.WriteLine();
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write("{0} ", transpose[i, j]);
+                }
+            }
+            Console.WriteLine();
+        }
+}
+      
+     
+     
+    
