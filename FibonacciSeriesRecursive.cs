@@ -8,28 +8,27 @@ using System.Threading;
 using System.Collections;
 
 namespace MiroslavD
-{   // Strings
-    // Factorial recursive.
+{   
  
-    public class TestClass
+    public class FibonacciNumbersRecusively
     {     
-        public static uint Factorial(uint n)
+        public static int Fibonacci(int n)
         {
-               if(n == 0)
+               if(n <= 2)
                {
                    return 1;
                   
                }
                else
                {
-                   return n * Factorial(n - 1);
+                   return Fibonacci(n - 1) + Fibonacci(n - 2);
                }
         }
         public static void Main()
         {
             Console.Write("Enter number: ");
-            uint n = Convert.ToUInt32(Console.ReadLine());
-            Console.WriteLine("Factorial of {0} is {1}", n, Factorial(n));
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Fibboanaci number: " + Fibonacci(number));
             Console.WriteLine();         
         }
     }
