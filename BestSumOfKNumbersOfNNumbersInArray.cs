@@ -10,7 +10,7 @@ namespace MiroslavD
 //   Да се напише програма, която чете от конзолата две цели числа N и K
 //   (K<N), и масив от N елемента. Да се намерят тези K поредни елемента,
 //   които имат максимална сума.
-    public class BestSumOfKNumbersOfNNumbers
+    public class BestSumOfKNumbersOfNNumbersInArray
     {
         public static void Main()
         {
