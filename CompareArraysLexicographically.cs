@@ -11,7 +11,7 @@ namespace MiroslavD
 //    лексикографски (буква по буква) и проверява кой от двата е по-рано
 //    в лексикографската подредба.
 
-    public  class CompareArraysLexicographically
+    public  class CompareCharArraysLexicographically
     {
         public static void Main()
         {
