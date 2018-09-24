@@ -8,8 +8,6 @@ namespace MiroslavD
 {
     class Majorant
     {
-        public static void Main()
-        {
            public static bool HasMajorant(int[] array, out int number)
         {
             number = 0;
