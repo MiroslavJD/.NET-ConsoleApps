@@ -25,7 +25,6 @@ namespace MiroslavD
        public static void Main(string[] args)
        {
            int[] array = {3,4,4,4,5,6,4,8,4,4,3,4,5,4};
-           Array.Sort(array);
            int number;
            bool hasMajorant = HasMajorant(array, out number);
            if(hasMajorant)
