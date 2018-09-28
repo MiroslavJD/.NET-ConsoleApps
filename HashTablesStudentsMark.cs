@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiroslavD
 {
-    class HashSetTablesStudentsMark
+    class HashTablesStudentsMark
     {     
         public static void Main()
         {
