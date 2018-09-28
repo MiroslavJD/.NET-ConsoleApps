@@ -9,7 +9,7 @@ using System.Security.Policy;
 
 namespace MiroslavD
 {
-    public class SetsWithStudents
+    public class HashSetsWithStudents
     {
        public static string GetStudentList(IEnumerable<string> students)
        {
