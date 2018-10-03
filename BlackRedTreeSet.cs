@@ -143,7 +143,7 @@ namespace MiroslavD
             });
             TreeSet<string> bandsMariikaLikes = new TreeSet<string>(new[]
             {
-                "Placebo","Nirvana","Linkin Park","LimpBizkit","Celdweller"
+                "Placebo","Nirvana","Linkin Park","LimpBizkit","Celldweller"
             });
 
             TreeSet<string> IntersectWith = new TreeSet<string>();
