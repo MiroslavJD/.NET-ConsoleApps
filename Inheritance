@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    class Shape
+    {
+        protected int width;
+        protected int height;
+        public void getWidth(int w)
+        {
+            width = w;
+        }
+        public void getHeight(int h)
+        {
+            height = h;
+        }
+    }
+    class Rectangle : Shape
+    {
+        public int getArea()
+        {
+            return width * height;
+        }
+    }
+    class RectangleTest
+    {
+        public static void Main()
+        {
+            Rectangle rect = new Rectangle();
+
+            rect.getWidth(5);
+            rect.getHeight(7);
+
+            Console.WriteLine("The area of rectangle is {0}", rect.getArea());
+
+        }
+    }
+}
